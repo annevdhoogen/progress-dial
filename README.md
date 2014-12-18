@@ -1,5 +1,5 @@
 # progress-dial
-A responsive circular progress bar, or pie chart, which animates the to a value when the page has loaded.
+A responsive circular progress bar, or pie chart, which animates to the value when the page has loaded.
 
 ### Examples
 ![](https://cloud.githubusercontent.com/assets/10232608/5488898/1b6d89e4-86c4-11e4-803f-e321bfe5cab0.png)

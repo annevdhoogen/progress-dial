@@ -1,0 +1,82 @@
+/* BASIC */
+body {
+  font-family: Arial, serif;
+  margin: 0;
+  padding: 0;
+  font-size: 24px;
+  color: #333;
+}
+h1 {
+  font-size: 28px;
+  margin: 40px 40px 0 40px;
+}
+h2 {
+  font-size: 14px;
+  text-transform: uppercase;
+  text-align: center;
+  color: #BDBDBD;
+}
+.cf:before,
+.cf:after {
+  content: " ";
+  display: table;
+}
+.cf:after {
+  clear: both;
+}
+.wrapper {
+  max-width: 1200px;
+  margin: 0 auto;
+  min-width: 300px;
+}
+.container {
+  margin: 40px;
+  padding: 20px;
+  border: 3px dashed #424242;
+}
+.container > div {
+  width: 20%;
+  float: left;
+}
+
+/* RESPONSIVE */
+
+@media screen and (max-width: 1024px) {
+  .container > div {
+    width: 25%;
+  }
+  
+  .dialPlugin .text {
+    font-size: 18px;
+  }
+
+}
+
+@media screen and (max-width: 768px) {
+  .container {
+    margin: 10px;
+    padding: 10px;
+  }
+  
+  .container > div {
+    width: 33.333%;
+  }
+
+  .dialPlugin .text-clipper {
+    width: calc(100% - 20px);
+    height: calc(100% - 20px);
+    margin: 10px;
+  }
+  
+  h1 {
+    margin: 10px 10px 0 10px;
+  }
+
+}
+
+@media screen and (max-width: 480px) {
+  .container > div {
+    width: 50%;
+  }
+
+}

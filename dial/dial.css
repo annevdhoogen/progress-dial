@@ -1,0 +1,89 @@
+/* BASICS */
+
+.dialPlugin {
+  position: relative;
+  overflow: hidden;
+  border-radius: 50%;
+  margin:10px;
+}
+
+.dialPlugin:before {
+  content: "";
+  display: block;
+  padding-top: 100%;
+}
+
+/* BACKGROUND */
+
+.dialPlugin .bg {
+  position: absolute;
+  top: 0;
+  left: 0;
+  right: 0;
+  bottom: 0;
+}
+
+/* PROGRESS */
+
+.dialPlugin .firstHalf,
+.dialPlugin .secondHalf {
+  content: "";
+  display: block;
+  width: 100%;
+  height: 200%;
+  position: absolute;
+  top: -50%;
+}
+
+.dialPlugin .firstHalf {
+  left: 50%;
+  z-index: 1;
+  text-indent: 0;
+  -webkit-transform: rotate(0deg);
+      -ms-transform: rotate(0deg);
+          transform: rotate(0deg);
+  -webkit-transform-origin: 0 50%;
+      -ms-transform-origin: 0 50%;
+          transform-origin: 0 50%;
+}
+
+.dialPlugin .secondHalf {
+  left: -50%;
+  z-index: 2;
+  text-indent: -180;
+  -webkit-transform-origin: 100% 50%;
+  -ms-transform-origin: 100% 50%;
+  transform-origin: 100% 50%;
+  -webkit-transform: rotate(-180deg);
+      -ms-transform: rotate(-180deg);
+          transform: rotate(-180deg);
+}
+
+/* TEXT */
+
+.dialPlugin .text-clipper{
+  width: calc(100% - 40px);
+  height: calc(100% - 40px);
+  margin: 20px;
+  overflow:hidden;
+  z-index: 3;
+  position: relative;
+  border-radius: 50%;
+}
+
+.dialPlugin .text {
+  display: table;
+  width:100%;
+  height:100%;
+
+  font-weight: bold;
+  font-size: 24px;
+}
+
+.dialPlugin .text span {
+  text-align: center;
+  display: table-cell;
+  top: 0;
+  left: 0;
+  vertical-align: middle;
+}

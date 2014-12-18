@@ -2,7 +2,7 @@
 
 ### PROGRESS-DIAL ###
 
-- A responsive circular progress bar, or pie chart.
+- A responsive circular progress bar, or pie chart, which animates to the value when the page has loaded.
 - Created by Anne van den Hoogen http://annevandenhoogen.nl
 
 # EXAMPLES
@@ -10,6 +10,14 @@
 https://cloud.githubusercontent.com/assets/10232608/5488898/1b6d89e4-86c4-11e4-803f-e321bfe5cab0.png
 
 # USAGE
+
+- Include the CSS and JS files:
+
+<link rel="stylesheet" href="dial/dial.css" />
+
+<script src="dial/dial.js"></script>
+
+- Don't forget to include jQuery as well.
 
 - Create a div with data-attributes:
 

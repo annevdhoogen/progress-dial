@@ -5,6 +5,16 @@ A responsive circular progress bar, or pie chart, which animates to the value wh
 ![](https://cloud.githubusercontent.com/assets/10232608/5488898/1b6d89e4-86c4-11e4-803f-e321bfe5cab0.png)
 
 ### Usage
+Include the CSS and JS files:
+```
+<link rel="stylesheet" href="dial/dial.css" />
+```
+```
+<script src="dial/dial.js"></script>
+```
+
+Don't forget to include jQuery as well.
+
 Create a div with data-attributes:
 ```
 <div class="dial-example" data-value="89"></div>
